@@ -6,7 +6,8 @@ import { Center } from '../components/shared/jssUtils';
 import {
   GeneralInformation,
   Experience,
-  Introdution
+  Introdution,
+  Title
 } from '../components/about';
 
 const styles = {
@@ -16,7 +17,7 @@ const styles = {
   section: {
     paddingTop: '2.5rem',
     paddingBottom: '2.5rem',
-    '&::before': {
+    '&:before': {
       content: '',
       zIndex: 1,
       position: 'absolute',
@@ -38,6 +39,15 @@ const About = ({ classes }) => {
   return (
     <div style={{ marginTop: '64px' }}>
       <Grid container justify="center" alignItems="center">
+        <Grid
+          item
+          component="section"
+          xs={12}
+          className={classNames(classes.center, classes.section)}
+          style={{ backgroundColor: '#1D6B87' }}
+        >
+          <Title />
+        </Grid>
         <Grid
           item
           component="section"

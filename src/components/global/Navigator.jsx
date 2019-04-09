@@ -42,18 +42,21 @@ class Navigator extends React.Component {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             Tân Nguyễn
           </Typography>
-          <Tabs
-            variant="fullWidth"
-            value={value}
-            onChange={this.handleChange}
-            className={classes.grow}
-          >
-            <TabLink label="About" href="page1" />
-          </Tabs>
-          <div
-            className={classNames(classes.grow, classes.icons)}
-            justify="flex-end"
-          >
+          <div className={classNames(classes.grow, classes.icons)}>
+            <Tabs
+              variant="fullWidth"
+              value={value}
+              onChange={this.handleChange}
+            >
+              <TabLink
+                label={
+                  <Typography variant="h6" color="inherit">
+                    About
+                  </Typography>
+                }
+                href="page1"
+              />
+            </Tabs>
             <IconButton color="inherit">
               <Icon
                 className="fab fa-linkedin"

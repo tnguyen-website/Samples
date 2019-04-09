@@ -46,7 +46,7 @@ class Experience extends React.Component {
     <Paper className={classes.papper}>
       <Grid container justify="space-between" wrap="nowrap">
         <span className={classes.image}>
-          <img src={img} />
+          <img alt="describe" src={img} />
         </span>
         <Typography variant="body1" className={classes.introductionText}>
           {text}
