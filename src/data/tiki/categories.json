@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "name": "Điện Thoại - Máy Tính Bảng",
+      "icon": "fas fa-mobile-alt"
+    },
+    {
+      "name": "Điện Tử - Điện Lạnh",
+      "icon": "fas fa-tv"
+    },
+    {
+      "name": "Phụ Kiện - Thiết Bị Số",
+      "icon": "fas fa-headphones"
+    },
+    {
+      "name": "Laptop - Thiết Bị IT",
+      "icon": "fas fa-laptop"
+    },
+    {
+      "name": "Máy Ảnh - Quay Phim",
+      "icon": "fas fa-camera"
+    },
+    {
+      "name": "Điện Gia Dụng",
+      "icon": "fas fa-blender"
+    },
+    {
+      "name": "Nhà Cửa Đời Sống",
+      "icon": "fas fa-tty"
+    },
+    {
+      "name": "Hàng Tiêu Dùng - Thực Phẩm",
+      "icon": "fas fa-spray-can"
+    },
+    {
+      "name": "Đồ chơi, Mẹ & Bé",
+      "icon": "fas fa-prescription-bottle"
+    },
+    {
+      "name": "Làm Đẹp - Sức Khỏe",
+      "icon": "fas fa-pencil-ruler"
+    },
+    {
+      "name": "Thời trang - Phụ kiện",
+      "icon": "fas fa-tshirt"
+    },
+    {
+      "name": "Thể Thao - Dã Ngoại",
+      "icon": "fas fa-football-ball"
+    },
+    {
+      "name": "Xe Máy, Ô tô, Xe Đạp",
+      "icon": "fas fa-motorcycle"
+    },
+    {
+      "name": "Hàng quốc tế",
+      "icon": "fas fa-globe"
+    },
+    {
+      "name": "Sách, VPP & Quà Tặng",
+      "icon": "fas fa-book"
+    },
+    {
+      "name": "Voucher - Dịch Vụ - Thẻ Cào",
+      "icon": "fas fa-credit-card"
+    }
+  ]
+}
