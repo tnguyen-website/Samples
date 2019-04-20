@@ -41,7 +41,7 @@ const About = ({ classes, width }) => {
             className={classNames(classes.center, classes.section)}
             style={{ backgroundColor: /*'#1D6B87'*/ 'transparent' }}
           >
-            <Title />
+            <Title width={width}/>
           </Grid>
           <Grid
             item

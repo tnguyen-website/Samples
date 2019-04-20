@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Icon from '@material-ui/core/Icon';
 import Link from '@material-ui/core/Link';
 import Hidden from '@material-ui/core/Hidden';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Avatar from './Avatar';
 
 const styles = theme => ({
@@ -52,7 +53,7 @@ const GeneralInformation = ({ classes, width }) => {
         <List>
           <ListItem>
             <ListItemIcon>
-              <Icon className="fas fa-user-tie" />
+              <Icon component={FontAwesomeIcon} icon="user-tie" />
             </ListItemIcon>
             <ListItemText
               primary={
@@ -64,7 +65,7 @@ const GeneralInformation = ({ classes, width }) => {
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <Icon className="fas fa-briefcase" />
+              <Icon component={FontAwesomeIcon}  icon="briefcase" />
             </ListItemIcon>
             <ListItemText
               primary={
@@ -76,7 +77,7 @@ const GeneralInformation = ({ classes, width }) => {
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <Icon className="fas fa-envelope-open" />
+              <Icon component={FontAwesomeIcon} icon="envelope-open" />
             </ListItemIcon>
             <ListItemText
               primary={
@@ -91,7 +92,7 @@ const GeneralInformation = ({ classes, width }) => {
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <Icon className="fab fa-linkedin" />
+              <Icon component={FontAwesomeIcon} icon={["fab", "linkedin"]} />
             </ListItemIcon>
             <ListItemText
               primary={

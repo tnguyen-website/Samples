@@ -6,11 +6,9 @@ class Parallax extends React.Component {
     this.state = {
       pageYOffset: 0
     };
-
-    this.handleScroll = this.handleScroll.bind(this);
   }
 
-  handleScroll() {
+  handleScroll = () => {
     this.setState({
       pageYOffset: window.pageYOffset
     });
