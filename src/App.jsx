@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet';
 import { BrowserRouter } from 'react-router-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import Router from './routes';
-import About from './pages/About';
 import { addFont } from './fontAwesome';
 
 const theme = createMuiTheme({
@@ -29,13 +28,13 @@ class App extends Component {
       <BrowserRouter>
         <MuiThemeProvider theme={theme}>
           <Helmet>
-          <link
+            <link
               rel="stylesheet"
               href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
             />
             <title>About Tan Nguyen</title>
           </Helmet>
-          <About />
+          <Router />
         </MuiThemeProvider>
       </BrowserRouter>
     );

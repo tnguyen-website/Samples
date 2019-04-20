@@ -23,7 +23,8 @@ const Introdution = ({ classes, width }) => {
     <Grid
       item
       container
-      xs={isOnSmallViewport ? 12 : 8}
+      xs={12}
+      md={8}
       justify={isOnSmallViewport ? 'flex-start' : 'center'}
       alignItems="center"
       wrap="nowrap"
