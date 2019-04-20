@@ -20,7 +20,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import TabLink from './TabLink';
 import PublicContact from './PublicContact';
 
-const styles = (theme) => ({
+const styles = theme => ({
   navigator: {
     minHeight: '64px'
   },
@@ -41,7 +41,6 @@ const styles = (theme) => ({
       paddingLeft: 0,
       flexGrow: 0
     }
-
   },
   drawerIcon: {
     color: 'inherit'
@@ -59,7 +58,7 @@ class Navigator extends React.Component {
   };
 
   handleDrawerClick = () => {
-    this.setState((prevState) => ({
+    this.setState(prevState => ({
       isDrawerOpened: !prevState.isDrawerOpened
     }));
   };
@@ -69,12 +68,12 @@ class Navigator extends React.Component {
       <Typography variant="h6" color="inherit">
         Tân Nguyễn
       </Typography>
-    )
+    );
   };
 
   renderDrawer = (selectedIndex, classes) => {
     return (
-      <Drawer open={this.state.isDrawerOpened} onClose={this.handleDrawerClick} >
+      <Drawer open={this.state.isDrawerOpened} onClose={this.handleDrawerClick}>
         <div
           tabIndex={0}
           role="button"
@@ -83,24 +82,38 @@ class Navigator extends React.Component {
           className={classes.drawer}
         >
           <ListItem button className={classes.drawerLabelContainer}>
-            <ListItemIcon className={classes.drawerIcon}><Icon component={FontAwesomeIcon} icon='code-branch' /></ListItemIcon>
-            <ListItemText primary={this.renderLabel()} className='text' />
+            <ListItemIcon className={classes.drawerIcon}>
+              <Icon component={FontAwesomeIcon} icon="code-branch" />
+            </ListItemIcon>
+            <ListItemText primary={this.renderLabel()} className="text" />
           </ListItem>
           <Divider />
-          {[{ text: 'About', icon: 'address-card'},{text: 'Samples', icon: 'th-list'}].map((item, index) => (
-            <ListItem button key={item.text} divider selected={selectedIndex === index}>
-              <ListItemIcon><Icon component={FontAwesomeIcon} icon={item.icon} /></ListItemIcon>
-              <ListItemText primary={
+          {[
+            { text: 'About', icon: 'address-card' },
+            { text: 'Samples', icon: 'th-list' }
+          ].map((item, index) => (
+            <ListItem
+              button
+              key={item.text}
+              divider
+              selected={selectedIndex === index}
+            >
+              <ListItemIcon>
+                <Icon component={FontAwesomeIcon} icon={item.icon} />
+              </ListItemIcon>
+              <ListItemText
+                primary={
                   <Typography variant="body2" color="inherit">
                     {item.text}
                   </Typography>
-              } />
+                }
+              />
             </ListItem>
           ))}
         </div>
       </Drawer>
     );
-  }
+  };
 
   render() {
     const { classes } = this.props;
@@ -110,36 +123,38 @@ class Navigator extends React.Component {
       <div>
         {this.renderDrawer(0, classes)}
         <AppBar>
-          <Grid component={Toolbar} container justify='space-between' className={classes.navigator} wrap='nowrap'>
+          <Grid
+            component={Toolbar}
+            container
+            justify="space-between"
+            className={classes.navigator}
+            wrap="nowrap"
+          >
             <Hidden smUp>
               <IconButton
-                  color="inherit"
-                  aria-label="Open drawer"
-                  onClick={this.handleDrawerClick}
-                >
-                  <Icon component={FontAwesomeIcon} icon='bars' />
+                color="inherit"
+                aria-label="Open drawer"
+                onClick={this.handleDrawerClick}
+              >
+                <Icon component={FontAwesomeIcon} icon="bars" />
               </IconButton>
             </Hidden>
-            <Hidden smDown>
-              {this.renderLabel()}
-            </Hidden>
-            <Grid item container xs={8} justify='flex-end'>
+            <Hidden smDown>{this.renderLabel()}</Hidden>
+            <Grid item container xs={8} justify="flex-end">
               <Hidden smDown>
-                <Grid item container xs={4} sm={8} justify='flex-end'> 
-                  <Tabs
-                    value={value}
-                    onChange={this.handleChange}
-                  >
-                  {['About', 'Samples'].map(x => <TabLink
-                      key={x}
-                      label={
-                        <Typography variant="h6" color="inherit">
-                          {x}
-                        </Typography>
-                      }
-                      href="page1"
-                    />)}
-                    
+                <Grid item container xs={4} sm={8} justify="flex-end">
+                  <Tabs value={value} onChange={this.handleChange}>
+                    {['About', 'Samples'].map(x => (
+                      <TabLink
+                        key={x}
+                        label={
+                          <Typography variant="h6" color="inherit">
+                            {x}
+                          </Typography>
+                        }
+                        href="page1"
+                      />
+                    ))}
                   </Tabs>
                 </Grid>
               </Hidden>

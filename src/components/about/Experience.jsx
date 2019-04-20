@@ -1,35 +1,35 @@
-import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import { Typography } from '@material-ui/core';
+import React from "react";
+import { withStyles } from "@material-ui/core/styles";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
+import { Typography } from "@material-ui/core";
 
 const styles = {
   papper: {
-    width: '70%',
-    height: '25rem'
+    width: "70%",
+    height: "25rem"
   },
   flexContainer: {
-    flexDirection: 'column'
+    flexDirection: "column"
   },
   indicator: {
-    backgroundColor: 'transparent'
+    backgroundColor: "transparent"
   },
   tabs: {
-    width: '20%'
+    width: "20%"
   },
   image: {
-    width: '350px',
-    paddingTop: '2em',
-    '& img': {
-      maxHeight: '300px',
-      maxWidth: '300px'
+    width: "350px",
+    paddingTop: "2em",
+    "& img": {
+      maxHeight: "300px",
+      maxWidth: "300px"
     }
   },
   introductionText: {
-    padding: '2em'
+    padding: "2em"
   }
 };
 
@@ -76,9 +76,9 @@ class Experience extends React.Component {
   ];
 
   images = [
-    'https://i.imgur.com/YQRcWjG.png',
-    'https://i.imgur.com/RKvxR6a.png',
-    'https://i.imgur.com/RKvxR6a.png'
+    "https://i.imgur.com/YQRcWjG.png",
+    "https://i.imgur.com/RKvxR6a.png",
+    "https://i.imgur.com/RKvxR6a.png"
   ];
 
   render() {

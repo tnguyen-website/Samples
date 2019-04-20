@@ -39,18 +39,19 @@ class Title extends React.Component {
         direction="column"
         backgroundImage={BackgroundImage}
       >
-          <div className={classes.titleContainer}>
-            <Hidden only={['md', 'lg', 'xl']}>
-              <Avatar />
-            </Hidden>
-            <Typography variant="h3" className={classes.title}>
-              TAN NGUYEN
-            </Typography>
-            <Typography variant="h5" className={classes.title} noWrap={false}>
-              I create WEB. {isOnSmallViewport && <br />} In fact, I sleep with it.
-            </Typography>
-            <PublicContact />
-          </div>
+        <div className={classes.titleContainer}>
+          <Hidden only={['md', 'lg', 'xl']}>
+            <Avatar />
+          </Hidden>
+          <Typography variant="h3" className={classes.title}>
+            TAN NGUYEN
+          </Typography>
+          <Typography variant="h5" className={classes.title} noWrap={false}>
+            I create WEB. {isOnSmallViewport && <br />} In fact, I sleep with
+            it.
+          </Typography>
+          <PublicContact />
+        </div>
       </Parallax>
     );
   }
