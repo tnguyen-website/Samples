@@ -39,13 +39,7 @@ const NavigationDrawer = ({
 }) => {
   return (
     <Drawer open={isOpened} onClose={handleClick}>
-      <div
-        tabIndex={0}
-        role="button"
-        onClick={handleClick}
-        onKeyDown={handleClick}
-        className={classes.drawer}
-      >
+      <div tabIndex={0} role="button" className={classes.drawer}>
         <List disablePadding>
           <ListItem button className={classes.drawerLabelContainer}>
             <ListItemText primary={<Brand />} className="text" />
