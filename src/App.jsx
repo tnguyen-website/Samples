@@ -41,7 +41,7 @@ class App extends Component {
               rel="stylesheet"
               href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
             />
-            <title>About Tan Nguyen</title>
+            <title>Tan Nguyen - Some my websites</title>
           </Helmet>
           <Navigator />
           <main className={classes.main}>
