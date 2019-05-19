@@ -6,6 +6,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { addFont } from './fontAwesome';
 import Router from './routes';
 import Navigator from './components/global/Navigator';
+import { Samples } from './pages';
 
 const theme = createMuiTheme({
   typography: {
@@ -37,15 +38,11 @@ class App extends Component {
       <BrowserRouter>
         <MuiThemeProvider theme={theme}>
           <Helmet>
-            <link
-              rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-            />
             <title>Tan Nguyen - Some my websites</title>
           </Helmet>
           <Navigator />
           <main className={classes.main}>
-            <Router />
+            <Samples />
           </main>
         </MuiThemeProvider>
       </BrowserRouter>

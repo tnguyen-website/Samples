@@ -35,27 +35,26 @@ const NavigationDrawer = ({
   isOpened,
   handleClick,
   classes,
-  selectedIndex
+  selectedIndex,
+  home,
+  pages
 }) => {
   return (
     <Drawer open={isOpened} onClose={handleClick}>
       <div tabIndex={0} role="button" className={classes.drawer}>
         <List disablePadding>
           <ListItem button className={classes.drawerLabelContainer}>
-            <ListItemText primary={<Brand />} className="text" />
+            <ListItemText primary={<Brand url={home.url} />} className="text" />
           </ListItem>
           <Divider />
-          {[
-            { text: 'About', icon: 'address-card' },
-            { text: 'Samples', icon: 'th-list' }
-          ].map((item, index) => (
+          {pages.map((item, index) => (
             <ListItem
               button
-              key={item.text}
+              key={item.name}
               divider
               selected={selectedIndex === index}
               component="a"
-              href={`/${item.text.toLowerCase()}`}
+              href={item.url}
             >
               <ListItemIcon>
                 <Icon component={FontAwesomeIcon} icon={item.icon} />
@@ -63,7 +62,7 @@ const NavigationDrawer = ({
               <ListItemText
                 primary={
                   <Typography variant="body2" color="inherit">
-                    {item.text}
+                    {item.name}
                   </Typography>
                 }
               />

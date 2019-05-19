@@ -14,9 +14,9 @@ const styles = theme => ({
   }
 });
 
-const Brand = ({ classes }) => {
+const Brand = ({ classes, url }) => {
   return (
-    <Link underline="none" href="/" color="inherit" className={classes.link}>
+    <Link underline="none" href={url} color="inherit" className={classes.link}>
       <Icon
         component={FontAwesomeIcon}
         icon="code-branch"

@@ -31,8 +31,8 @@ class SampleCard extends React.Component {
     return (
       <Card className={classes.card}>
         <CardActionArea>
-          <a href={url}>
-            <CardHeader title={name} />
+          <a href={url} target="_blank">
+            <CardHeader title={name} subheader={stack.join(', ')} />
             <CardMedia
               className={classes.media}
               image={thumbnail}

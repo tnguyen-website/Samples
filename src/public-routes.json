@@ -1,0 +1,18 @@
+{
+  "routes": [
+    {
+      "name": "Home",
+      "url": "https://tannguyen.xyz/"
+    },
+    {
+      "name": "About",
+      "url": "https://about.tannguyen.xyz",
+      "icon": "address-card"
+    },
+    {
+      "name": "Samples",
+      "url": "https://samples.tannguyen.xyz",
+      "icon": "th-list"
+    }
+  ]
+}
